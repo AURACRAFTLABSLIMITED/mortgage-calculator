@@ -1,0 +1,117 @@
+
+/* Reset default browser margins & set modern font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Center the calculator card perfectly on any screen size */
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Calculator Container (Responsive Card) */
+.calculator {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px; /* Limits width on big desktop screens */
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 14px; /* Even spacing between all rows */
+}
+
+/* Heading */
+.calculator h2 {
+    color: #0f172a;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+
+/* Input Labels */
+.calculator label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: -6px;
+}
+
+/* Text & Number Inputs */
+.calculator input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #0f172a;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Highlight input when clicked/focused */
+.calculator input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Calculate Button */
+#calcBtn {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#calcBtn:hover {
+    background-color: #1d4ed8;
+}
+
+#calcBtn:active {
+    transform: scale(0.98);
+}
+
+/* Result Box */
+.calculator h3 {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    text-align: center;
+    color: #334155;
+    font-size: 1rem;
+}
+
+#result {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-left: 4px;
+}
+
+/* Adjustments for small mobile screens (< 400px) */
+@media (max-width: 400px) {
+    .calculator {
+        padding: 20px 16px;
+    }
+
+    .calculator h2 {
+        font-size: 1.3rem;
+    }
+}
