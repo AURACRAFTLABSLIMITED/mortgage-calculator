@@ -14,4 +14,5 @@ A clean, modern, and fully responsive mortgage payment calculator built using pu
 
 ## 🏡 live link
 
-* **Live link:**
+* **Live link:** https://mortgagecalculatorbyauracraftlab.netlify.app/ 
+                 
